@@ -1,0 +1,14 @@
+h3 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.editor-container {
+  display: grid;
+  place-content: center;
+  gap: 20px;
+}
+
+.editor {
+  width: 80vw;
+}
