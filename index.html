@@ -2,28 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Symbol Playground</title>
     <script src="https://embed.runkit.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="editor-container">
-      <h3>welcom to Symbol Playground</h3>
-      <div id="my-element" class="editor"></div>
+    <div class="container">
+      <div class="title">
+        <div class="title_text">
+          <h1>Symbol Playground</h1>
+          <h3>for symbol-sdk</h3>
+        </div>
+        <div class="title_link">
+          <a
+            href="https://learn.en.symbol-community.com/"
+            rel="noopener"
+            target="_blank"
+            >Go documents</a
+          >
+        </div>
+      </div>
+      <div style="width: 100%">
+        <hr />
+      </div>
+      <div class="editor">
+        <div class="editor_toolbar">
+          <button id="session1">Session1</button>
+          <button id="session2">Session2</button>
+          <button id="session3">Session3</button>
+        </div>
+        <div style="min-height: 300px">
+          <div id="my-element"></div>
+        </div>
+        <div
+          class="editor_toolbar"
+          style="margin-top: 3em; justify-content: flex-end"
+        >
+          <button id="save">save</button>
+        </div>
+      </div>
     </div>
-    <script>
-      const notebook = RunKit.createNotebook({
-        element: document.getElementById("my-element"),
-        minHeight: "300px",
-        nodeVersion: "16.18.0",
-        source: `const sym = require("symbol-sdk@2.0.3");
-
-const alice = sym.Account.generateNewAccount(152);
-console.log(alice);
-        `,
-      });
-    </script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>

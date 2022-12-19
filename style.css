@@ -1,14 +1,76 @@
-h3 {
-  text-align: center;
-  margin-top: 50px;
+body {
+  background-color: rgb(43, 43, 43);
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  padding: 0px;
 }
 
-.editor-container {
-  display: grid;
-  place-content: center;
-  gap: 20px;
+h1 {
+  text-align: left;
+  font-size: 2em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-size: 1em;
+  text-align: left;
+  margin-top: 0px;
+}
+
+a {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  background: linear-gradient(333deg, #0013e2, #8800ff);
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  background: linear-gradient(333deg, #0013e2, #8800ff);
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  gap: 30px;
+}
+
+.title {
+  width: 70%;
+  min-width: 600px;
+  display: flex;
+}
+
+.title_text {
+  flex-grow: 1;
+}
+
+.title_link {
+  display: flex;
+  align-items: center;
 }
 
 .editor {
-  width: 80vw;
+  width: 70%;
+  min-width: 600px;
+}
+
+.editor_toolbar {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 1.5em;
 }

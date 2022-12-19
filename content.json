@@ -1,0 +1,7 @@
+{
+  "data": {
+    "session1": "const sym = require('symbol-sdk@2.0.3');\n\nconst alice = sym.Account.generateNewAccount(152);",
+    "session2": "const sym = require('symbol-sdk@2.0.3');\n\nconst alice = sym.Account.generateNewAccount(152);\nalice.address.plain();",
+    "session3": "const sym = require('symbol-sdk@2.0.3');\n\nconst alicePrivateKey = 'xxxx';\nsym.Account.createFromPrivateKey(alicePrivateKey, 152);"
+  }
+}
